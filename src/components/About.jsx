@@ -2,28 +2,28 @@ import React from 'react';
 
 const About = () => {
   const stats = [
-    { icon: '📁', value: '2+', label: 'Projects Built' },
-    { icon: '🎓', value: '3rd', label: 'Current Year' },
-    { icon: '📜', value: '2+', label: 'Certifications' },
-    { icon: '💻', value: '100+', label: 'Hours Coding' },
+    { icon: '💼', value: '2+', label: 'Real-World Projects' },
+    { icon: '🏢', value: '1+', label: 'Internship Completed' },
+    { icon: '🏆', value: '2+', label: 'Certifications Earned' },
+    { icon: '⚡', value: '500+', label: 'Code Commits' },
   ];
 
   const funFacts = [
     {
       icon: '🎓',
-      text: 'Studying Computer Science at LPU, Punjab (3rd Year)'
+      text: 'B.Tech CSE Student at LPU | Focused on Modern Web Technologies'
     },
     {
       icon: '💼',
-      text: 'Completed paid internship at Annapurna Veneer Udhyog'
+      text: 'Delivered Production-Grade Accounting System for Real Business'
     },
     {
       icon: '🏆',
-      text: 'Specialized in MERN Stack development'
+      text: 'MERN Stack Specialist | React • Node.js • MongoDB Expert'
     },
     {
-      icon: '🚀',
-      text: 'Built production-ready accounting management system'
+      icon: '⚡',
+      text: 'Fast Learner | Passionate About Clean Code & Best Practices'
     },
   ];
 
@@ -35,8 +35,8 @@ const About = () => {
             About Me
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600 dark:text-gray-400">
-            B.Tech CSE Student & Aspiring Full Stack Developer
+          <p className="text-xl text-gray-600 dark:text-gray-400 font-medium">
+            Passionate Full Stack Developer | MERN Stack Expert | Building Digital Solutions
           </p>
         </div>
 

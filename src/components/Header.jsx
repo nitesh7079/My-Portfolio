@@ -13,21 +13,38 @@ const Header = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           {/* Left content */}
           <div className="flex-1 text-center lg:text-left animate-slide-in">
-            <p className="text-lg md:text-xl mb-4 text-blue-100">
-              Hello, I'm
+            <p className="text-lg md:text-xl mb-4 text-blue-100 font-medium">
+              👋 Hello, I'm
             </p>
-            <h1 className="text-5xl md:text-7xl font-bold mb-4 animate-fade-in">
+            <h1 className="text-5xl md:text-7xl font-bold mb-4 animate-fade-in leading-tight">
               Nitesh Raj
             </h1>
-            <h2 className="text-2xl md:text-3xl mb-6 text-blue-100 font-semibold animate-slide-up">
-              Full Stack Developer
+            <h2 className="text-2xl md:text-4xl mb-6 text-blue-100 font-bold animate-slide-up">
+              Full Stack Developer & MERN Specialist
             </h2>
-            <p className="text-lg md:text-xl mb-8 text-blue-50 max-w-2xl mx-auto lg:mx-0 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-              I create exceptional digital experiences that combine beautiful design with powerful functionality. Let's build something amazing together.
+            <p className="text-lg md:text-xl mb-8 text-blue-50 max-w-2xl mx-auto lg:mx-0 animate-slide-up leading-relaxed" style={{ animationDelay: '0.2s' }}>
+              Transforming ideas into powerful web applications with cutting-edge technologies. 
+              <span className="font-semibold text-white"> Specialized in React, Node.js, MongoDB & Modern Web Development.</span>
             </p>
             
+            {/* Achievement badges */}
+            <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-6 animate-slide-up" style={{ animationDelay: '0.3s' }}>
+              <div className="flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full border border-white/30">
+                <span className="text-xl">💼</span>
+                <span className="text-sm font-semibold">Internship Experience</span>
+              </div>
+              <div className="flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full border border-white/30">
+                <span className="text-xl">🏆</span>
+                <span className="text-sm font-semibold">Certified Developer</span>
+              </div>
+              <div className="flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full border border-white/30">
+                <span className="text-xl">🚀</span>
+                <span className="text-sm font-semibold">Production Projects</span>
+              </div>
+            </div>
+            
             {/* Contact links */}
-            <div className="flex flex-wrap justify-center lg:justify-start gap-4 mb-8 animate-slide-up" style={{ animationDelay: '0.4s' }}>
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4 mb-8 animate-slide-up" style={{ animationDelay: '0.5s' }}>
               <a 
                 href="mailto:niteshrajkumar66@gmail.com"
                 className="px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-all duration-300 hover:scale-105 shadow-lg"
