@@ -5,7 +5,7 @@ const About = () => {
     { icon: '💼', value: '2+', label: 'Real-World Projects' },
     { icon: '🏢', value: '1+', label: 'Internship Completed' },
     { icon: '🏆', value: '2+', label: 'Certifications Earned' },
-    { icon: '⚡', value: '500+', label: 'Code Commits' },
+    { icon: '⚡', value: '100+', label: 'Code Commits' },
   ];
 
   const funFacts = [
