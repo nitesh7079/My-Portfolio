@@ -78,10 +78,10 @@ const About = () => {
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white shadow-2xl relative overflow-hidden">
             <div className="absolute top-0 right-0 text-9xl opacity-10">"</div>
             <p className="text-xl md:text-2xl font-medium mb-4 relative z-10 italic">
-              "Code is like humor. When you have to explain it, it's bad."
+              "First, solve the problem. Then, write the code."
             </p>
             <p className="text-right text-blue-100 font-semibold">
-              - Cory House
+              - John Johnson
             </p>
           </div>
         </div>

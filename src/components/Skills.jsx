@@ -23,7 +23,7 @@ const Skills = () => {
     ],
   };
 
-  const learningSkills = ['Next.js', 'TypeScript', 'Docker', 'AWS'];
+  const learningSkills = ['Next.js', 'Docker', 'AWS'];
 
   return (
     <section id="skills" className="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300">

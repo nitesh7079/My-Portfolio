@@ -5,7 +5,7 @@ const Education = () => {
     {
       institution: 'Lovely Professional University',
       degree: 'Bachelor of Technology – Computer Science and Engineering',
-      grade: 'CGPA: 6.43',
+      grade: '',
       location: 'Phagwara, Punjab',
       date: 'Since Aug 2023',
       icon: '🎓',
@@ -14,7 +14,7 @@ const Education = () => {
     {
       institution: 'Bhartiya Inter College',
       degree: 'Intermediate',
-      grade: 'Percentage: 66%',
+      grade: '',
       location: 'Gahri, Bihar',
       date: 'Apr\'20 – Mar\'22',
       icon: '📚',
@@ -23,7 +23,7 @@ const Education = () => {
     {
       institution: 'MKD Public School',
       degree: 'Matriculation',
-      grade: 'Percentage: 76%',
+      grade: '',
       location: 'Motihari, Bihar',
       date: 'March 2020',
       icon: '🏫',
