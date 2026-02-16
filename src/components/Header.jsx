@@ -52,7 +52,7 @@ const Header = () => {
                 Get In Touch
               </a>
               <a 
-                href="/Nitesh Raj.pdf" 
+                href="/Nitesh Raj Cv.pdf" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 bg-white/10 backdrop-blur-sm border-2 border-white text-white font-semibold rounded-lg hover:bg-white/20 transition-all duration-300 hover:scale-105"
