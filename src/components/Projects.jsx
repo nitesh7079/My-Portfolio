@@ -9,10 +9,11 @@ const Projects = () => {
       category: 'Full Stack',
       tech: ['React', 'Node.js', 'MongoDB', 'Express'],
       date: 'Oct 25 – Nov 25',
-      image: '💼',
+      image: '/image.png',
+      isImageUrl: true,
       links: {
         github: 'https://github.com/nitesh7079',
-        live: '#'
+        live: 'https://annapurnaveneer.online/'
       },
       highlights: [
         'Developed a full-stack accounting management system for a plywood company to handle daily transactions, invoices, records, and stock data',
@@ -28,7 +29,7 @@ const Projects = () => {
       image: '🌐',
       links: {
         github: 'https://github.com/nitesh7079',
-        live: '#'
+        live: 'https://annapurnaveneer.online/'
       },
       highlights: [
         'Designed and developed a responsive portfolio website with modern UI/UX layout',
@@ -82,8 +83,16 @@ const Projects = () => {
               <div className="grid md:grid-cols-5 gap-6 p-8">
                 {/* Left - Project icon/image */}
                 <div className="md:col-span-2 flex items-center justify-center">
-                  <div className="w-48 h-48 bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center text-8xl shadow-2xl transform hover:scale-105 transition-transform duration-300">
-                    {project.image}
+                  <div className="w-48 h-48 bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center shadow-2xl transform hover:scale-105 transition-transform duration-300 overflow-hidden">
+                    {project.isImageUrl ? (
+                      <img 
+                        src={project.image} 
+                        alt={project.title}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <span className="text-8xl">{project.image}</span>
+                    )}
                   </div>
                 </div>
 
