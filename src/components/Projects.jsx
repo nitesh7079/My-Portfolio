@@ -26,10 +26,10 @@ const Projects = () => {
       category: 'Frontend',
       tech: ['React', 'Tailwind', 'JavaScript'],
       date: 'Nov 2025',
-      image: '🌐',
+      image: '/image copy.png',
       links: {
         github: 'https://github.com/nitesh7079',
-        live: 'https://annapurnaveneer.online/'
+        live: 'https://niteshraj.in'
       },
       highlights: [
         'Designed and developed a responsive portfolio website with modern UI/UX layout',
