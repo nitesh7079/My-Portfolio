@@ -16,10 +16,12 @@ export const themes = [
   { id: 'ocean', name: 'Deep Ocean', color: '#020617', type: 'dark' },
 ];
 
+const defaultThemeId = 'sky';
+
 export const ThemeProvider = ({ children }) => {
   const [currentTheme, setCurrentTheme] = useState(() => {
     const savedTheme = localStorage.getItem('portfolio-theme');
-    return savedTheme || 'midnight';
+    return themes.some(t => t.id === savedTheme) ? savedTheme : defaultThemeId;
   });
 
   useEffect(() => {

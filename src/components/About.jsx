@@ -208,7 +208,7 @@ const About = () => {
             </div>
 
             <div className="p-10 rounded-[2.5rem] bg-gradient-to-br from-[var(--accent-primary)] to-[var(--accent-secondary)] text-white shadow-2xl premium-card relative overflow-hidden group">
-               <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2 group-hover:scale-150 transition-transform duration-700"></div>
+              <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2 group-hover:scale-150 transition-transform duration-700"></div>
               <p className="text-[10px] font-black uppercase tracking-[0.4em] text-blue-200 mb-4 opacity-80">
                 Current Focus
               </p>
@@ -246,19 +246,19 @@ const About = () => {
                 ))}
               </div>
             </div>
-            
-             <div className="p-8 rounded-[2.5rem] bg-[var(--bg-primary)] border border-[var(--border-color)] text-center animate-fade-in">
-                 <div className="text-gray-300 dark:text-gray-600 text-7xl mb-4 font-serif">"</div>
-                 <p className="text-xl font-bold text-[var(--text-primary)] italic mb-6 leading-relaxed relative z-10">
-                    First, solve the problem. <br/>Then, write the code.
-                 </p>
-                 <p className="text-xs font-black uppercase tracking-[0.2em] text-[var(--accent-primary)]">
-                    - John Johnson
-                 </p>
-             </div>
+
+            <div className="p-8 rounded-[2.5rem] bg-[var(--bg-primary)] border border-[var(--border-color)] text-center animate-fade-in">
+              <div className="text-gray-300 dark:text-gray-600 text-7xl mb-4 font-serif">"</div>
+              <p className="text-xl font-bold text-[var(--text-primary)] italic mb-6 leading-relaxed relative z-10">
+                First, solve the problem. <br />Then, write the code.
+              </p>
+              <p className="text-xs font-black uppercase tracking-[0.2em] text-[var(--accent-primary)]">
+                - John Johnson
+              </p>
+            </div>
           </div>
         </div>
-        
+
         {/* Achievements */}
         <div className="mt-16 mb-16 text-center animate-slide-up stagger-4">
           <p className="text-[10px] font-black uppercase tracking-[0.5em] text-[var(--text-secondary)] mb-10">Achievements</p>
@@ -282,7 +282,7 @@ const About = () => {
           <p className="text-[10px] font-black uppercase tracking-[0.5em] text-[var(--text-secondary)] mb-10">Core Strengths</p>
           <div className="flex flex-wrap justify-center gap-4">
             {['Problem Solving', 'Critical Thinking', 'Adaptability', 'MERN Stack', 'Process Automation', 'Database Management'].map((strength, index) => (
-              <span 
+              <span
                 key={index}
                 className="px-6 py-3 bg-[var(--bg-secondary)] border border-[var(--border-color)] text-[var(--text-primary)] rounded-2xl font-bold text-sm hover:border-[var(--accent-primary)] hover:text-[var(--accent-primary)] transition-all hover:-translate-y-1 shadow-sm"
               >

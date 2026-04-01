@@ -29,7 +29,7 @@ const experiences = [
   }
 ];
 
-const Internship = () => {
+const Experience = () => {
   return (
     <section id="experience" className="py-24 bg-[var(--bg-primary)] transition-colors duration-500 overflow-hidden relative">
       {/* Decorative Orb */}
@@ -41,7 +41,7 @@ const Internship = () => {
             Experience
           </p>
           <h2 className="text-4xl md:text-5xl font-extrabold text-[var(--text-primary)] mb-6 leading-tight">
-            Operating inside the business <br className="hidden md:block"/>while engineering the system
+            Operating inside the business <br className="hidden md:block" />while engineering the system
           </h2>
           <p className="text-lg md:text-xl text-[var(--text-secondary)] max-w-3xl mx-auto leading-relaxed font-light">
             Real exposure to ledgers, sales calls, and client escalations keeps my software pragmatic. These engagements show how I pair accounting discipline with product thinking.
@@ -56,7 +56,7 @@ const Internship = () => {
               style={{ animationDelay: `${index * 0.15 + 0.3}s` }}
             >
               <div className="absolute top-0 right-10 w-4 h-full bg-gradient-to-b from-blue-600/10 to-transparent transition-colors group-hover:from-blue-600/20"></div>
-              
+
               <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-8 gap-6 relative z-10">
                 <div>
                   <p className="text-[10px] font-black uppercase tracking-[0.4em] text-[var(--accent-primary)] mb-2">
@@ -96,4 +96,4 @@ const Internship = () => {
   );
 };
 
-export default Internship;
+export default Experience;

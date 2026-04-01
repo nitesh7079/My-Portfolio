@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Header from './components/Header';
 import About from './components/About';
 import Skills from './components/Skills';
-import Internship from './components/Internship';
+import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Training from './components/Training';
 import Education from './components/Education';
@@ -20,7 +20,7 @@ function App() {
         <Header />
         <About />
         <Skills />
-        <Internship />
+        <Experience />
         <Projects />
         <Training />
         <Education />

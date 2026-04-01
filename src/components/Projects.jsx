@@ -42,7 +42,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-24 bg-[var(--bg-primary)] transition-colors duration-500 relative overflow-hidden">
       <div className="absolute top-0 right-0 -mt-20 -mr-20 w-96 h-96 bg-blue-600/5 dark:bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
-      
+
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16 animate-slide-up stagger-1">
           <p className="uppercase tracking-[0.4em] text-sm text-[var(--accent-primary)] font-bold mb-3">
@@ -61,11 +61,10 @@ const Projects = () => {
             <button
               key={item}
               onClick={() => setFilter(item)}
-              className={`px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 ${
-                filter === item
+              className={`px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 ${filter === item
                   ? 'bg-[var(--accent-primary)] text-white shadow-xl shadow-[var(--accent-primary)]/20 scale-105'
                   : 'bg-[var(--bg-secondary)] text-[var(--text-secondary)] border border-[var(--border-color)] hover:border-[var(--accent-primary)]/40 hover:text-[var(--text-primary)]'
-              }`}
+                }`}
             >
               {item}
             </button>
@@ -80,7 +79,7 @@ const Projects = () => {
               style={{ animationDelay: `${index * 0.15 + 0.3}s` }}
             >
               <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-blue-500/5 to-purple-500/5 dark:from-blue-500/10 dark:to-purple-500/10 blur-2xl -mr-20 -mt-20 transition-transform duration-700 group-hover:scale-150"></div>
-              
+
               <div className="relative z-10 flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 mb-8">
                 <div>
                   <div className="flex items-center gap-3 mb-3">

@@ -30,7 +30,7 @@ const Header = () => {
     >
       <div className="absolute inset-0 bg-[var(--bg-primary)] opacity-95 transition-colors duration-500"></div>
       <div className="absolute inset-0 bg-gradient-to-br from-[var(--accent-primary)]/10 via-transparent to-[var(--accent-secondary)]/5 pointer-events-none"></div>
-      
+
       {/* Decorative Orbs */}
       <div className="absolute inset-x-0 top-24 flex justify-center pointer-events-none">
         <div className="w-96 h-96 rounded-full bg-gradient-to-r from-blue-500/20 to-yellow-400/20 blur-3xl animate-float"></div>
@@ -42,15 +42,15 @@ const Header = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7 space-y-8 text-center lg:text-left">
-            
+
             <div className="animate-slide-up stagger-1 inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[var(--bg-secondary)] text-[var(--accent-primary)] text-xs font-black uppercase tracking-[0.4em] backdrop-blur-sm border border-[var(--accent-primary)]/20 shadow-[0_20px_50px_rgba(0,0,0,0.1)]">
               Dual Discipline
             </div>
-            
+
             <h1 className="animate-slide-up stagger-2 text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-[var(--text-primary)] drop-shadow-sm">
               I run accounting & sales operations today while engineering the web systems that will power tomorrow's business.
             </h1>
-            
+
             <p className="animate-slide-up stagger-3 text-xl text-[var(--text-secondary)] leading-relaxed max-w-3xl mx-auto lg:mx-0 font-light">
               I currently manage business finances with <span className="font-semibold text-[var(--accent-primary)] font-bold">Tally ERP 9</span>, coordinate sales and reporting, and build MERN applications that automate the same workflows. The goal is clear: become a businessman who understands every layer—from ledger entries to cloud deployments.
             </p>

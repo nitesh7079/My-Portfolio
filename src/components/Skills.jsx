@@ -53,7 +53,7 @@ const Skills = () => {
             Capabilities
           </p>
           <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-[var(--text-primary)] leading-tight">
-            Bridging Business Operations <br className="hidden md:block"/>& Full Stack Engineering
+            Bridging Business Operations <br className="hidden md:block" />& Full Stack Engineering
           </h2>
           <p className="text-lg md:text-xl text-[var(--text-secondary)] max-w-3xl mx-auto leading-relaxed font-light">
             The same person who balances ledgers in Tally ERP 9 also writes the APIs and interfaces that automate those workflows. This mix keeps my solutions grounded and executable.
@@ -68,7 +68,7 @@ const Skills = () => {
               style={{ animationDelay: `${index * 0.15 + 0.2}s` }}
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-gray-500/5 dark:bg-white/5 blur-2xl group-hover:scale-150 transition-transform duration-700 pointer-events-none"></div>
-              
+
               <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-10 gap-6 relative z-10">
                 <div>
                   <p className="text-[10px] font-black uppercase tracking-[0.4em] text-[var(--text-secondary)] mb-2">
@@ -107,7 +107,7 @@ const Skills = () => {
 
         <div className="max-w-4xl mx-auto text-center mt-24 animate-slide-up stagger-4">
           <div className="inline-block p-10 rounded-[3rem] bg-[var(--accent-primary)] text-white shadow-2xl relative overflow-hidden premium-card group">
-             <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-purple-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+            <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-purple-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
             <h3 className="text-2xl font-extrabold mb-4 relative z-10">
               Currently Leveling Up
             </h3>

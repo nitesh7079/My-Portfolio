@@ -78,11 +78,10 @@ const Navbar = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`px-5 py-2.5 rounded-xl text-sm font-bold transition-all duration-300 uppercase tracking-widest ${
-                  activeSection === item.id
+                className={`px-5 py-2.5 rounded-xl text-sm font-bold transition-all duration-300 uppercase tracking-widest ${activeSection === item.id
                     ? 'bg-gradient-to-r from-[var(--accent-primary)] to-[var(--accent-secondary)] text-white shadow-lg shadow-[var(--accent-primary)]/25 scale-105'
                     : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-hover)]'
-                }`}
+                  }`}
               >
                 {item.label}
               </button>
@@ -97,8 +96,8 @@ const Navbar = () => {
                 className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-200 hover:border-blue-500 dark:hover:border-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all duration-300"
                 aria-label="Selection Theme"
               >
-                <div 
-                  className="w-4 h-4 rounded-full shadow-inner transition-colors duration-500" 
+                <div
+                  className="w-4 h-4 rounded-full shadow-inner transition-colors duration-500"
                   style={{ backgroundColor: themes.find(t => t.id === currentTheme)?.color }}
                 />
               </button>
@@ -116,16 +115,14 @@ const Navbar = () => {
                           setTheme(theme.id);
                           setIsThemePickerOpen(false);
                         }}
-                        className={`flex items-center gap-3 p-2 rounded-xl border transition-all text-left ${
-                          currentTheme === theme.id
+                        className={`flex items-center gap-3 p-2 rounded-xl border transition-all text-left ${currentTheme === theme.id
                             ? 'border-blue-500 bg-blue-50 dark:bg-blue-900/20'
                             : 'border-transparent hover:bg-gray-50 dark:hover:bg-gray-800'
-                        }`}
+                          }`}
                       >
                         <div className="w-4 h-4 rounded-full shrink-0 shadow-sm" style={{ backgroundColor: theme.color }} />
-                        <span className={`text-[10px] font-bold truncate ${
-                          currentTheme === theme.id ? 'text-blue-600 dark:text-blue-400' : 'text-gray-600 dark:text-gray-400'
-                        }`}>
+                        <span className={`text-[10px] font-bold truncate ${currentTheme === theme.id ? 'text-blue-600 dark:text-blue-400' : 'text-gray-600 dark:text-gray-400'
+                          }`}>
                           {theme.name}
                         </span>
                       </button>
@@ -144,7 +141,7 @@ const Navbar = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </button>
-            
+
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="lg:hidden w-10 h-10 flex items-center justify-center rounded-full border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-200 transition-colors hover:bg-gray-100 dark:hover:bg-gray-800"
@@ -163,23 +160,21 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Mobile Menu Overlay */}
-      <div 
-        className={`fixed inset-0 bg-white/95 dark:bg-gray-950/95 backdrop-blur-xl z-40 transition-all duration-300 lg:hidden flex flex-col items-center justify-center min-h-screen ${
-          isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
-        }`}
+      <div
+        className={`fixed inset-0 bg-white/95 dark:bg-gray-950/95 backdrop-blur-xl z-40 transition-all duration-300 lg:hidden flex flex-col items-center justify-center min-h-screen ${isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+          }`}
       >
         <div className="flex flex-col items-center gap-4 w-full max-w-sm px-6">
           {navItems.map((item) => (
             <button
               key={item.id}
               onClick={() => scrollToSection(item.id)}
-              className={`w-full py-4 text-center rounded-2xl text-lg font-semibold transition-all border ${
-                activeSection === item.id
+              className={`w-full py-4 text-center rounded-2xl text-lg font-semibold transition-all border ${activeSection === item.id
                   ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white border-transparent shadow-lg shadow-blue-500/20'
                   : 'bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800 text-gray-800 dark:text-gray-200 hover:border-blue-500'
-              }`}
+                }`}
             >
               {item.label}
             </button>

@@ -66,7 +66,7 @@ const Contact = () => {
         <div className="grid lg:grid-cols-2 gap-10 max-w-6xl mx-auto items-stretch">
           <div className="p-10 rounded-[2rem] bg-[var(--bg-secondary)] text-[var(--text-primary)] shadow-2xl executive-panel relative overflow-hidden group animate-slide-up stagger-2">
             <div className="absolute inset-0 bg-gradient-to-br from-[var(--accent-primary)]/20 to-[var(--accent-secondary)]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
-            
+
             <p className="text-xs uppercase tracking-[0.4em] text-[var(--text-secondary)] mb-6 font-bold">Direct Line</p>
             <h3 className="text-3xl font-extrabold mb-6 leading-tight">Accounting & Web Systems Discussions</h3>
             <p className="text-[var(--text-secondary)] mb-10 text-lg font-light leading-relaxed">
