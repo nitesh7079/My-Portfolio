@@ -116,7 +116,7 @@ const About = () => {
             About Nitesh Raj
           </h2>
           <p className="text-lg md:text-xl text-[var(--text-secondary)] max-w-3xl mx-auto leading-relaxed font-light">
-            I run accounting and sales operations today while engineering the web systems that will power tomorrow’s business—merging business discipline with reliable, scalable software.
+            From managing accounts to building digital solutions, my journey is about connecting business with technology.
           </p>
           <div className="flex flex-wrap justify-center gap-3 mt-10">
             {keyPromises.map((promise, index) => (
