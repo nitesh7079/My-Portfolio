@@ -3,7 +3,7 @@ import React from 'react';
 const experiences = [
   {
     title: 'Accounting & Sales Manager',
-    organization: 'Family Manufacturing Business',
+    organization: 'Manufacturing Operations Unit',
     timeline: 'Aug 2023 – Present',
     focus: 'Operations Leadership',
     highlights: [

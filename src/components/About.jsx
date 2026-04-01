@@ -4,7 +4,7 @@ const About = () => {
   const stats = [
     { icon: '🧩', value: '04+', label: 'Full Stack Products' },
     { icon: '🏢', value: '1', label: 'Industry Internship' },
-    { icon: '📊', value: '120+', label: 'Business Records Automated' },
+    { icon: '📊', value: '500+', label: 'Business Records Automated' },
     { icon: '⚡', value: '3+', label: 'Years in CS Journey' },
   ];
 
@@ -47,7 +47,7 @@ const About = () => {
 
   const experienceTimeline = [
     {
-      title: 'Accounting & Sales Manager — Family Business',
+      title: 'Accounting & Sales Manager — Business Operations',
       meta: 'Operations | 2023 – Present',
       description: 'Own daily ledgers, inventory tracking, receivable follow-ups, and sales analytics using Tally ERP 9, Excel, and process checklists.'
     },
@@ -66,6 +66,26 @@ const About = () => {
   const keyPromises = ['Problem-first approach', 'Well-documented delivery', 'Scalable architecture'];
   const currentFocus = ['Next.js', 'Docker', 'AWS'];
   const capabilityTags = ['MERN Stack Delivery', 'API Design', 'Data Modeling', 'UI Architecture', 'Testing & QA', 'Project Ownership'];
+  const achievements = [
+    {
+      badge: 'Tally ERP 9',
+      title: 'Automated Enterprise Ledgers',
+      impact: '500+ entries reconciled',
+      description: 'Broke down manual workflows, created templates, and now reconcile receivables and payables twice as fast inside Tally.'
+    },
+    {
+      badge: 'Internship',
+      title: 'Sales & Accounts Intelligence',
+      impact: 'Daily MIS packs delivered',
+      description: 'At Annapurna Veneer Udyog I digitized sales calls, cleaned spreadsheets, and turned them into concise MIS updates leadership could act on.'
+    },
+    {
+      badge: 'Product Build',
+      title: 'Accounting Management System',
+      impact: 'Cross-team visibility unlocked',
+      description: 'Shipped a MERN stack product that mirrors our Tally workflows so the team can track ledgers, approvals, and analytics from a single dashboard.'
+    }
+  ];
 
   return (
     <section
@@ -239,6 +259,24 @@ const About = () => {
           </div>
         </div>
         
+        {/* Achievements */}
+        <div className="mt-16 mb-16 text-center animate-slide-up stagger-4">
+          <p className="text-[10px] font-black uppercase tracking-[0.5em] text-[var(--text-secondary)] mb-10">Achievements</p>
+          <div className="grid gap-6 md:grid-cols-3">
+            {achievements.map((achievement, index) => (
+              <div
+                key={achievement.title}
+                className="p-8 rounded-[2rem] bg-[var(--bg-secondary)] border border-[var(--border-color)] shadow-lg text-left hover:-translate-y-1.5 transition-all hover:border-[var(--accent-primary)]/40"
+              >
+                <p className="text-[10px] font-black uppercase tracking-[0.35em] text-[var(--accent-primary)] mb-4">{achievement.badge}</p>
+                <h5 className="text-xl font-bold text-[var(--text-primary)] mb-2">{achievement.title}</h5>
+                <p className="text-sm font-semibold text-[var(--text-secondary)] mb-4 uppercase tracking-[0.2em]">{achievement.impact}</p>
+                <p className="text-[var(--text-secondary)] leading-relaxed text-sm">{achievement.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Expertise Highlights */}
         <div className="mt-16 text-center animate-slide-up stagger-4">
           <p className="text-[10px] font-black uppercase tracking-[0.5em] text-[var(--text-secondary)] mb-10">Core Strengths</p>

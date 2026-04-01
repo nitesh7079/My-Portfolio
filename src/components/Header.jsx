@@ -79,7 +79,7 @@ const Header = () => {
                 rel="noopener noreferrer"
                 className="px-8 py-3.5 rounded-full border border-[var(--accent-primary)]/40 text-[var(--accent-primary)] font-semibold hover:bg-[var(--accent-primary)]/5 transition-all duration-300 backdrop-blur-sm active:scale-95"
               >
-                Executive Profile
+                Download Resume
               </a>
             </div>
 
