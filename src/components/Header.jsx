@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const heroMetrics = [
   {
@@ -22,7 +22,26 @@ const trustSignals = ['Tally ERP 9', 'Sales Ledger Automation', 'Excel MIS', 'Re
 
 const portraitHighlights = ['Internship Experience', 'Certified Developer', 'Production Projects'];
 
+const technologies = [
+  'React.js',
+  'Node.js',
+  'Express.js',
+  'MongoDB',
+  'Tailwind CSS',
+  'Next.js',
+  'REST APIs'
+];
+
 const Header = () => {
+  const [techIndex, setTechIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTechIndex((prev) => (prev + 1) % technologies.length);
+    }, 2500);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <header
       id="home"
@@ -105,7 +124,21 @@ const Header = () => {
               </div>
             </div>
 
-            <div className="animate-slide-up stagger-3 flex flex-wrap justify-center gap-3 relative z-10">
+            <div className="animate-slide-up stagger-3 text-center relative z-10 flex flex-col items-center justify-center gap-1 mt-2">
+              <h2 className="text-xl font-black text-[var(--accent-primary)] uppercase tracking-[0.2em] drop-shadow-sm">
+                Full Stack Developer
+              </h2>
+              <div className="h-5 overflow-hidden flex items-center justify-center">
+                <span 
+                  key={techIndex} 
+                  className="block text-[10px] font-bold text-[var(--text-secondary)] uppercase tracking-[0.4em] animate-[slideUp_0.5s_cubic-bezier(0.16,1,0.3,1)_forwards]"
+                >
+                  {technologies[techIndex]}
+                </span>
+              </div>
+            </div>
+
+            <div className="animate-slide-up stagger-3 flex flex-wrap justify-center gap-3 relative z-10 mt-3">
               {portraitHighlights.map((highlight) => (
                 <span
                   key={highlight}
