@@ -64,17 +64,6 @@ const About = () => {
   ];
 
   const keyPromises = ['Business-informed software', 'Real-world validation', 'Scale-ready delivery'];
-  const aboutPoints = [
-    'My name is Nitesh Raj, and I am a 3rd-year B.Tech Computer Science student.',
-    'What makes my journey different is that I do not just learn development in theory — I apply it in real business environments.',
-    'I work in accounting and sales operations, where I manage business data using Tally ERP and Microsoft Excel, including ledgers, receivables, and MIS reporting.',
-    'Along with this, I am also a full stack developer, working with technologies like HTML, CSS, JavaScript, React, Node.js, Express, and MongoDB.',
-    'Currently, I am learning and exploring new business strategies and working with tools like Tally, Excel, and other business software to strengthen my operational skills.',
-    'I have also developed a full stack Accounting Management System, which is inspired by real-world business problems and is designed to manage transactions, records, and data efficiently.',
-    'Recently, I have been placed in a plywood company in Nepal for the role of Accounting and Sales Manager with a good package, and I will be joining after this semester.',
-    'My long-term goal is to become a businessman. I plan to gain 2–3 years of real industry experience, understand business operations deeply, and then start and run my own business.',
-    'My portfolio reflects this journey of combining business knowledge with technical skills to build practical and scalable solutions.'
-  ];
   const currentFocus = ['Next.js', 'Docker', 'AWS'];
   const capabilityTags = ['MERN Stack Delivery', 'API Design', 'Data Modeling', 'UI Architecture', 'Testing & QA', 'Project Ownership'];
   const achievements = [
@@ -126,21 +115,6 @@ const About = () => {
               >
                 {promise}
               </span>
-            ))}
-          </div>
-          <div className="max-w-4xl mx-auto mt-10 space-y-4 text-left">
-            {aboutPoints.map((point, index) => (
-              <div
-                key={point}
-                className="flex gap-5 p-5 rounded-3xl bg-gradient-to-r from-[var(--bg-secondary)] to-[var(--bg-primary)] border border-[var(--border-color)]/60 shadow-sm"
-              >
-                <span className="text-xs font-black tracking-[0.4em] text-[var(--accent-primary)] pt-2">
-                  {(index + 1).toString().padStart(2, '0')}
-                </span>
-                <p className="text-[var(--text-secondary)] text-base leading-relaxed">
-                  {point}
-                </p>
-              </div>
             ))}
           </div>
         </div>
