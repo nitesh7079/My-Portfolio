@@ -56,17 +56,28 @@ function App() {
 
   return (
     <ThemeProvider>
-      <div className="min-h-screen transition-colors duration-500 bg-[var(--bg-primary)]">
-        <Navbar />
-        <Header />
-        <About />
-        <Skills />
-        <Experience />
-        <Projects />
-        <Training />
-        <Education />
-        <Contact />
-        <Footer />
+      <div className="relative min-h-screen transition-colors duration-500 bg-[var(--bg-primary)] overflow-hidden">
+        
+        {/* Animated Professional Background (Gradient Blobs) */}
+        <div className="blob-bg">
+          <div className="blob-1"></div>
+          <div className="blob-2"></div>
+          <div className="blob-3"></div>
+        </div>
+
+        {/* Real Content Layout Container */}
+        <div className="relative z-10 w-full">
+          <Navbar />
+          <Header />
+          <About />
+          <Skills />
+          <Experience />
+          <Projects />
+          <Training />
+          <Education />
+          <Contact />
+          <Footer />
+        </div>
       </div>
     </ThemeProvider>
   );

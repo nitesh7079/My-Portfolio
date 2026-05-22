@@ -74,12 +74,6 @@ const About = () => {
       description: 'Run accounting and sales operations daily, translating Tally ERP and Excel workflows into actionable data for leadership.'
     },
     {
-      badge: 'Placement',
-      title: 'Annapurna Veneer Opportunity',
-      impact: 'Offer secured',
-      description: 'Joining Annapurna Veneer after the semester to scale sales intelligence and bring software rigor to finance ops.'
-    },
-    {
       badge: 'Product Build',
       title: 'Accounting Management System',
       impact: 'End-to-end visibility',

@@ -289,6 +289,67 @@ a {
   animation-delay: 0.4s;
 }
 
+/* --- Animated Professional Background (Gradient Blobs) --- */
+@keyframes blob-movement {
+  0% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(15vw, 15vh) scale(1.1); }
+  66% { transform: translate(-10vw, 10vh) scale(0.9); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+@keyframes blob-movement-alt {
+  0% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(-20vw, -10vh) scale(1.2); }
+  66% { transform: translate(15vw, -15vh) scale(0.8); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+.blob-bg {
+  position: fixed;
+  inset: -10vh -10vw;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  background: transparent;
+}
+
+.blob-1, .blob-2, .blob-3 {
+  position: absolute;
+  filter: blur(120px);
+  border-radius: 50%;
+  opacity: 0.4;
+  will-change: transform;
+}
+
+.dark .blob-1, .dark .blob-2, .dark .blob-3 {
+  opacity: 0.2;
+}
+
+.blob-1 {
+  width: 50vw;
+  height: 50vw;
+  background: var(--accent-primary);
+  top: -10vh; left: -10vw;
+  animation: blob-movement 25s infinite ease-in-out alternate;
+}
+
+.blob-2 {
+  width: 45vw;
+  height: 45vw;
+  background: var(--accent-secondary);
+  bottom: -15vh; right: -10vw;
+  animation: blob-movement-alt 28s infinite ease-in-out alternate;
+}
+
+.blob-3 {
+  width: 60vw;
+  height: 40vw;
+  background: var(--accent-primary);
+  top: 40vh; left: 30vw;
+  opacity: 0.25;
+  animation: blob-movement 30s infinite ease-in-out alternate-reverse;
+}
+
 /* Premium Card Hover */
 .premium-card {
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
